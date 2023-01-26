@@ -55,7 +55,7 @@ function ArticleCard() {
     <Row gutter={16}>
       {articles?.map((article: Article, index: number) => (
       <Col key={index} span={8}>
-        <Card.Grid key={index} style={{textAlign: 'justify'}} onClick={()=> setDetail(article?.content)}>
+        <Card.Grid style={{textAlign: 'justify'}} onClick={()=> setDetail(article?.content)}>
          <Card hoverable style={{marginBottom: 30}} cover={<img alt={article?.author} style={{height: 240, objectFit: 'cover' }} src={article?.urlToImage} />} >
           <Meta title={article?.title}/>
           <Meta title={new Date(article?.publishedAt).toLocaleString()} />
