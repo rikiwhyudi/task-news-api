@@ -5,7 +5,7 @@ function reverseAlphabet(originalString) {
   for (let i = 0; i < n; i++) {
     let c = originalString[i];
     if (c >= "A" && c <= "Z") {
-      reversedAlphabet += c.toUpperCase();
+      reversedAlphabet += c;
     } else if (c >= "a" && c <= "z") {
       reversedAlphabet += c.toUpperCase();
     } else {
